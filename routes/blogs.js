@@ -1,7 +1,10 @@
 const express = require("express");
 const blogroute = express()
-const {createBlog, singleblog} = require('../controller/blogcontroller')
+const {createBlog, singleblog, updateBlog, deleteBlog} = require('../controller/blogcontroller')
 
 blogroute.post("/create", createBlog)
 blogroute.get("/single", singleblog)
+blogroute.patch("/update/:_id", updateBlog)
+blogroute.delete("/delete/:_id", deleteBlog)
 module.exports = blogroute
+
