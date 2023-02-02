@@ -50,13 +50,16 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.main{
-    position: relative;
-    padding: 20px;
+.main-top{
     width: 70%;
-  }
+}
 .main-top h1{
     text-align: center;
+}
+.blog{
+    width: 500px;
+    height: 50vh;
+    margin-left: 15%;
 }
 input[type=text], select,textarea {
     width: 100%;
