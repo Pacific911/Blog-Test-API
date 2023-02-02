@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/addBlog.css">
+    <title>Blog</title>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <h1>My APIs</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="addBlog.html">ADD BLOGS</a></li>
+                    <li><a href="#">MESSAGES</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <div class="main-top">
+            <h1>Adding Blogs</h1>
+          </div>
+          <section class="blog">
+            <div class="blog-list">
+              <div>
+  
+                <form id="add-blog-form">
+                  <label for="fname">Blog Name</label>
+                  <input type="text" id="name" placeholder="Your name.." required="">
+                  <input type="file" id="img">
+                  <br>
+                  <label for="lname">Blog Description</label>
+                  <textarea rows="4" cols="50" id="message" form="form" required=""></textarea>
+              
+                  <input type="submit" id="btn"value="Submit">
+                  <button class="button" id="btn-danger">Change</button>
+                </form>
+  
+              </div>
+            </div>
+          </section>
+    </section>
+</body>
+</html>
